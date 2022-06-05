@@ -10,28 +10,23 @@ export const Products = () => {
     const [state, setState] = React.useState(fdata);
     const increment = (val) => {
         console.log(val)
-        // 1. Make a shallow copy of the array
         let temp_state = [...state];
-        // 2. Make a shallow copy of the element you want to mutate
         let temp_element = { ...temp_state[val-1] };
-        // 3. Update the property you're interested in
         temp_element.quantity = temp_element.quantity+1;
-        // 4. Put it back into our array. N.B. we *are* mutating the array here, but that's why we made a copy first
         temp_state[val-1] = temp_element;
-        // 5. Set the state to our new copy
         setState( temp_state );
       }
       const decrement = (val) => {
-        // 1. Make a shallow copy of the array
         let temp_state = [...state];
-        // 2. Make a shallow copy of the element you want to mutate
         let temp_element = { ...temp_state[val-1] };
-        // 3. Update the property you're interested in
         if(temp_element.quantity!=0){
-        temp_element.quantity = temp_element.quantity-1;}
-        // 4. Put it back into our array. N.B. we *are* mutating the array here, but that's why we made a copy first
+            temp_element.quantity = temp_element.quantity-1;
+            if (temp_element.quantity==0)
+            {
+                //Delete API   
+            }
+        }
         temp_state[val-1] = temp_element;
-        // 5. Set the state to our new copy
         setState( temp_state );
       }
     return (

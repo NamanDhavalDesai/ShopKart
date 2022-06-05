@@ -1,0 +1,41 @@
+.cont {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 2px 0px;
+    border: 5px solid black;
+    background-color: rgb(174, 174, 174, 0.5);
+  }
+  td{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  td:last-child{
+    border-right: 0px solid black;
+  }
+  th{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  th:last-child{
+    border-right: 0px solid black;
+  }
+  .btnchg{
+    width: 30%;
+    margin: 5%;
+    padding-bottom: 3px;
+  }
+  .min{
+    background-color: brown;
+    color: white;
+  }
+  .max{
+    background-color:green;
+    color: white;
+  }

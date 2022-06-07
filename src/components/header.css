@@ -1,0 +1,13 @@
+.titlebar{
+    height: 80px;
+    width: 100%;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(154, 154, 154);
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.maintitle{
+    padding-top: 15px;
+}
